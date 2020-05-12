@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {PageComponent} from "./page/types/PageComponent";
+import {PageComponent} from "./page/PageComponent";
 
 function App() {
 
@@ -9,11 +8,6 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                Yeah!
                 <PageComponent/>
                 <a
                     className="App-link"

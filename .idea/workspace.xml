@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97646d70-a128-4fbf-8fbc-0c0c7f179139" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/blocks/Article.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/Block.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/BlockData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/BlockIndex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/BlockStyle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/PageComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/PageData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/types/style/Color.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/blockIndex.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/blocks/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/blocks/Article.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/types/BlockData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/types/BlockData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/types/PageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/PageComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +48,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/page" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -103,22 +98,34 @@
       <option name="presentableId" value="Default" />
       <updated>1589313425539</updated>
       <workItem from="1589313427398" duration="267000" />
-      <workItem from="1589313739907" duration="4171000" />
+      <workItem from="1589313739907" duration="6972000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;Introducing page, blocks">
+      <created>1589318707603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589318707603</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit&#10;Introducing page, blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;Introducing page, blocks" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589313591811">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1589313591811" />
-    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2" timestamp="1589318696242">
+    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2" timestamp="1589318706730">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1589318696242" />
+    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1589318706730" />
     <state x="742" y="312" width="476" height="483" key="FileChooserDialogImpl" timestamp="1589318153614">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

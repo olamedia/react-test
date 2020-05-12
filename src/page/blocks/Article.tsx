@@ -7,19 +7,19 @@ export type ArticleData = {
     text: string
 }
 
-export class ArticleBlock extends Block{
+export class ArticleBlock extends Block {
     name: BlockName.Article = BlockName.Article
     elementStyles = {}
     props: {
-        article: ArticleData
+        data: ArticleData
     } = {
-        article: {
+        data: {
             text: 'No text'
         }
     }
 
-    get article(){
-        return this.props.article
+    get article() {
+        return this.props.data
     }
 
     // elements: {
@@ -27,13 +27,14 @@ export class ArticleBlock extends Block{
     //     text
     // }
 
-    style(elementName: string): CSSProperties{
+    style(elementName: string): CSSProperties {
         return {
+            color: "black",
             backgroundColor: elementName === 'header' ? 'azure' : 'beige'
         }
     }
 
-    render(){
+    render() {
         return <div>
             <h1 style={this.style('header')}>{this.article.header}</h1>
             <p style={this.style('text')}>{this.article.text}</p>
