@@ -8,7 +8,7 @@ type PageComponentProps = {
 }
 
 export class PageComponent extends React.Component<PageComponentProps> {
-    forceEditMode: boolean = false
+    forceEditMode = false
 
     get mode() {
         return this.forceEditMode ? 'edit' : this.props.mode
