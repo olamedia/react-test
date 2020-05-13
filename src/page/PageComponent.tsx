@@ -39,7 +39,7 @@ export class PageComponent extends React.Component<PageComponentProps> {
 
     renderBlocks(blocks: BlockData[]) {
         return <>
-            {this.blocks().map(block => (
+            {blocks.map(block => (
                 <React.Fragment key={block.id}>
                     {this.block(block)}
                 </React.Fragment>

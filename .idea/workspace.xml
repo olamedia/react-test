@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97646d70-a128-4fbf-8fbc-0c0c7f179139" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/SamplePageData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/blocks/Cover.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/components/BlockToolbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/PageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/PageComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/blockIndex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/blockIndex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/blocks/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/blocks/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/types/Block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/types/Block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/types/BlockData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/types/BlockData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/types/BlockIndex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/types/BlockIndex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/types/BlockStyle.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589313425539</updated>
       <workItem from="1589313427398" duration="267000" />
-      <workItem from="1589313739907" duration="20110000" />
+      <workItem from="1589313739907" duration="20288000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;Introducing page, blocks">
       <created>1589318707603</created>
@@ -120,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589323352476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="toolbar, trigger actions on block from toolbar&#10;sample data moved to separate file">
+      <created>1589340385952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589340385952</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +127,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit&#10;Introducing page, blocks" />
     <MESSAGE value="rendering block list" />
-    <option name="LAST_COMMIT_MESSAGE" value="rendering block list" />
+    <MESSAGE value="toolbar, trigger actions on block from toolbar&#10;sample data moved to separate file" />
+    <option name="LAST_COMMIT_MESSAGE" value="toolbar, trigger actions on block from toolbar&#10;sample data moved to separate file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589313591811">
@@ -140,10 +139,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="768" y="273" width="376" height="561" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1589330098634" />
-    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2" timestamp="1589323352213">
+    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2" timestamp="1589340385660">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1589323352213" />
+    <state x="547" y="153" width="817" height="802" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1589340385660" />
     <state x="742" y="312" width="476" height="483" key="FileChooserDialogImpl" timestamp="1589318153614">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
