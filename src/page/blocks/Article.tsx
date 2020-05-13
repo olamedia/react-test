@@ -1,7 +1,7 @@
-import {Block, BlockProps} from "../types/Block";
-import React, {CSSProperties} from "react";
-import {BlockKind} from "../types/BlockIndex";
-import {BaseBlockData} from "../types/BlockData";
+import { Block, BlockProps } from '../types/Block'
+import React, { CSSProperties } from 'react'
+import { BlockKind } from '../types/BlockIndex'
+import { BaseBlockData } from '../types/BlockData'
 
 export interface ArticleBlockData extends BaseBlockData<ArticleBlockData> {
     kind: BlockKind.Article
@@ -31,13 +31,17 @@ export class ArticleBlock extends Block<ArticleBlockProps> {
     // }
 
     style(elementName: keyof ArticleData): CSSProperties | undefined {
-        return this.props.style && elementName in this.props.style ? this.props.style[elementName] : undefined
+        return this.props.style && elementName in this.props.style
+            ? this.props.style[elementName]
+            : undefined
     }
 
     renderBlock() {
-        return <div>
-            <h1 style={this.style('header')}>{this.article.header}</h1>
-            <p style={this.style('text')}>{this.article.text}</p>
-        </div>
+        return (
+            <div>
+                <h1 style={this.style('header')}>{this.article.header}</h1>
+                <p style={this.style('text')}>{this.article.text}</p>
+            </div>
+        )
     }
 }

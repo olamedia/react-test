@@ -1,9 +1,10 @@
 export enum BlockKind {
     Undefined = 'Undefined',
     Cover = 'Cover',
-    Article = 'Article'
+    Article = 'Article',
 }
 
-export type BlockKindType = BlockKind.Undefined |
-    BlockKind.Cover |
-    BlockKind.Article
+export type BlockKindType =
+    | BlockKind.Undefined
+    | BlockKind.Cover
+    | BlockKind.Article

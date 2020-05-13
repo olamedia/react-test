@@ -1,14 +1,12 @@
-import React from 'react';
-import './App.css';
-import {PageComponent} from "./page/PageComponent";
+import React from 'react'
+import './App.css'
+import { PageComponent } from './page/PageComponent'
 
 function App() {
-
-
     return (
         <div className="App">
             <header className="App-header">
-                <PageComponent/>
+                <PageComponent />
                 <a
                     className="App-link"
                     href="https://reactjs.org"
@@ -19,7 +17,7 @@ function App() {
                 </a>
             </header>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App

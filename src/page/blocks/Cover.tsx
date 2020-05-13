@@ -1,7 +1,7 @@
-import {Block, BlockProps} from "../types/Block";
-import React, {CSSProperties} from "react";
-import {BlockKind} from "../types/BlockIndex";
-import {BaseBlockData} from "../types/BlockData";
+import { Block, BlockProps } from '../types/Block'
+import React, { CSSProperties } from 'react'
+import { BlockKind } from '../types/BlockIndex'
+import { BaseBlockData } from '../types/BlockData'
 
 export interface CoverBlockData extends BaseBlockData<CoverBlockData> {
     kind: BlockKind.Cover
@@ -36,10 +36,14 @@ export class CoverBlock extends Block<CoverBlockProps> {
     }
 
     renderBlock() {
-        return <div>
-            <div className={'h3'} style={this.style('suptitle')}>{this.data.suptitle}</div>
-            <h1 style={this.style('title')}>{this.data.title}</h1>
-            <p style={this.style('description')}>{this.data.description}</p>
-        </div>
+        return (
+            <div>
+                <div className={'h3'} style={this.style('suptitle')}>
+                    {this.data.suptitle}
+                </div>
+                <h1 style={this.style('title')}>{this.data.title}</h1>
+                <p style={this.style('description')}>{this.data.description}</p>
+            </div>
+        )
     }
 }

@@ -1,5 +1,5 @@
-import {BlockData} from "../page/types/BlockData";
-import {BlockKind} from "../page/types/BlockIndex";
+import { BlockData } from '../page/types/BlockData'
+import { BlockKind } from '../page/types/BlockIndex'
 
 export const samplePageData: BlockData[] = [
     {
@@ -8,8 +8,9 @@ export const samplePageData: BlockData[] = [
         data: {
             suptitle: 'OUR COMPANY',
             title: 'Bring your ideas to life',
-            description: 'Anything you\'ve even dreamed about is possible to realise just at the moment when you decided to win.'
-        }
+            description:
+                "Anything you've even dreamed about is possible to realise just at the moment when you decided to win.",
+        },
     },
     {
         id: '2',
@@ -26,16 +27,16 @@ export const samplePageData: BlockData[] = [
         },
         style: {
             header: {
-                color: 'red'
-            }
-        }
+                color: 'red',
+            },
+        },
     },
     {
         id: '3',
         kind: BlockKind.Article,
         data: {
             header: 'Custom header3',
-            text: 'Custom text3'
-        }
-    }
+            text: 'Custom text3',
+        },
+    },
 ]
