@@ -1,59 +1,48 @@
 import React from "react";
 import {BlockData} from "./types/BlockData";
 import {blockIndex} from "./blockIndex";
-import {BlockName} from "./types/BlockIndex";
+import {samplePageData} from "../data/SamplePageData";
 
 
-export class PageComponent extends React.Component<any, any> {
-    props: {
-        mode?: 'edit'
-    } = {
-        mode: undefined
+type PageComponentProps = {
+    mode?: 'edit'
+}
+
+export class PageComponent extends React.Component<PageComponentProps> {
+
+    forceEditMode: boolean = false
+
+    get mode() {
+        return this.forceEditMode ? 'edit' : this.props.mode
     }
 
     get isEditMode() {
-        return this.props.mode === 'edit'
+        return this.mode === 'edit'
+    }
+
+    toggleEdit() {
+        this.forceEditMode = !this.forceEditMode
+        console.log('forceEditMode', this.forceEditMode, 'mode=', this.mode, 'isEditMode=', this.isEditMode)
+        this.forceUpdate()
     }
 
     blocks(): BlockData[] {
-        return [
-            {
-                name: BlockName.Article,
-                data: {
-                    text: 'Custom text'
-                }
-            },
-            {
-                name: BlockName.Article,
-                data: {
-                    header: 'Custom header2',
-                    text: 'Custom text2'
-                }
-            },
-            {
-                name: BlockName.Article,
-                data: {
-                    header: 'Custom header3',
-                    text: 'Custom text3'
-                }
-            }
-        ]
+        return samplePageData
     }
 
     block(blockData: BlockData) {
-        const SpecificBlock = blockIndex[blockData.name];
-        const attributes = {
-            data: blockData.data
-        };
+        const {kind, data, style} = blockData
+        const attributes = {data: data, style: style, mode: this.isEditMode ? 'edit' : undefined}
+        const SpecificBlock = blockIndex[kind];
         return <SpecificBlock {...attributes}/>;
     }
 
     renderBlocks(blocks: BlockData[]) {
         return <>
             {this.blocks().map(block => (
-                <>
+                <React.Fragment key={block.id}>
                     {this.block(block)}
-                </>
+                </React.Fragment>
             ))}
         </>
     }
@@ -61,6 +50,7 @@ export class PageComponent extends React.Component<any, any> {
     render() {
         return (
             <div>
+                <button onClick={() => this.toggleEdit()}>TOGGLE EDIT MODE</button>
                 {this.renderBlocks(this.blocks())}
             </div>
         );

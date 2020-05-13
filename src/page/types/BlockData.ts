@@ -1,7 +1,13 @@
-import {BlockNameType} from "./BlockIndex";
+import {CoverBlockData} from "../blocks/Cover";
+import {ArticleBlockData} from "../blocks/Article";
+import {BlockKindType} from "./BlockIndex";
+import {CSSProperties} from "react";
 
-export interface BlockData {
-    name: BlockNameType,
-    data: { [key: string]: any }
-    style?: { [key: string]: any }
+export type BaseBlockData<T extends BaseBlockData<any>> = {
+    id: string, // Unique block id
+    kind: BlockKindType
+    data: any
+    style?: { [P in keyof T['data']]?: CSSProperties }
 }
+
+export type BlockData = ArticleBlockData | CoverBlockData
